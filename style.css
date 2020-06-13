@@ -1,23 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
-/* font-family: 'Sen', sans-serif; */
 
 /* Reset */
 *,
 *::before,
 *::after {
   margin: 0;
-  padding:0 ;
+  padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-    --color-base:#000000;
-    --light-grey:#DEECF9;
-    --dark-grey:#C7E0F4;
-    --color-text:#FFFFFF;
-    --color-primary:#5221E6;
-    --color-green:#3CC74E;
-    --color-pink:#E95D90;
-    --color-peach:#FFF3E4;
-    --color-violet:#FBE4FF;
-}   
+:root {
+  --color-base: #000000;
+  --color-background: #181823;
+  --light-grey: #deecf9;
+  --dark-grey: #c7e0f4;
+  --color-text: #ffffff;
+  --color-primary: #5221e6;
+  --color-green: #3cc74e;
+  --color-pink: #e95d90;
+  --color-peach: #fff3e4;
+  --color-violet: #fbe4ff;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Sen', sans-serif;
+  font-size: 1.6rem;
+  color: var (var(--color-base));
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* section {
+  padding: 5rem 0;
+}
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+} */
+.nav {
+  height: 8.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7.2rem;
+  background: linear-gradient(
+    to right,
+    var(--color-base) 0 38%,
+    var(--color-background) 38% 100%
+  );
+  flex-wrap: wrap;
+}
+/* .nav__logo {
+  max-width: 80%;
+} */
+
+.nav__list {
+  list-style: none;
+  width: 33%;
+  display: flex;
+  height: 100%;
+  color: var(--color-text);
+  justify-content: right;
+}
+.nav__item {
+  text-align: center;
+}
+.nav__link {
+  display: block;
+  padding: 3.2rem 2.4rem;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in;
+}
+.nav__link:hover {
+  background: var(--color-primary);
+  -webkit-text-stroke: 1px var(--color-text);
+}
+/* 
+@media screen and (max-width: 900px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__list {
+    flex-direction: column;
+    color: green;
+  }
+} */
