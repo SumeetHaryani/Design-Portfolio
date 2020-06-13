@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+/* font-family: 'Sen', sans-serif; */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+}
+
+:root{
+    --color-base:#000000;
+    --light-grey:#DEECF9;
+    --dark-grey:#C7E0F4;
+    --color-text:#FFFFFF;
+    --color-primary:#5221E6;
+    --color-green:#3CC74E;
+    --color-pink:#E95D90;
+    --color-peach:#FFF3E4;
+    --color-violet:#FBE4FF;
+}   
