@@ -6,34 +6,471 @@
     <link rel="stylesheet" href="style.css" />
     <title>Design Portfolio</title>
   </head>
+
   <body>
+    <div class="container">
       <header>
-    <nav class="nav">
-      <a href="index.html" class="nav__logo">
-      <img src="Images/Robin-Logo.svg" alt="logo" srcset="">
-      </a>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#experience" class="nav__link">Experience</a>
-        </li>
-        <li class="nav__item">
-          <a href="#work" class="nav__link">Work</a>
-        </li>
-        <li class="nav__item">
-          <a href="#photography" class="nav__link">Photography</a>
-        </li>
-        <li class="nav__item">
-          <a href="#contact" class="nav__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <div class="container">
-                
-            </div>
+        <nav class="nav">
+          <a href="index.html" class="nav__logo">
+            <img src="images/robin-logo.svg" alt="logo" />
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#project" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#photography" class="nav__link">Photography</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav__menu-toggle">
+          <img src="images/menu-icon.svg" alt="menu-icon" />
         </div>
-    </main>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <div class="hero__img">
+            <img src="images/hero-image.jpg" alt="hero-img" />
+          </div>
+          <div class="hero__content">
+            <h1 class="heading-1">
+              I’m Robin Williams. A Product Designer
+              <span class="hero__headline--light">based in Italy.</span>
+            </h1>
+            <p class="u-text-1">
+              I’m probably the most passionate designer you will ever get to
+              work with. If you have a great project that needs some amazing
+              skills, I’m your guy.
+            </p>
+          </div>
+        </section>
+
+        <section class="experience section-padding" id="experience">
+          <div class="experience__content">
+            <p class="f-bold text-grey">WORK EXPERIENCE</p>
+            <h2 class="heading-2">
+              Companies I have worked <br />
+              for in the past
+            </h2>
+          </div>
+          <div class="experience__companies">
+            <div class="experience__company">
+              <p class="experience__company-no">01</p>
+              <h3 class="heading-3">
+                <span class="experience__company-name--green">Google,</span>
+                Interaction Designer
+              </h3>
+              <p class="u-text-2 text-grey experience__company-text">
+                I currently am the lead designer on the interaction design team
+                for Google Play.
+              </p>
+            </div>
+            <div class="experience__company">
+              <p class="experience__company-no">02</p>
+              <h3 class="heading-3">
+                <span class="experience__company-name--blue">Facebook,</span>
+                Product Designer
+              </h3>
+              <p class="u-text-2 text-grey experience__company-text">
+                I’ve worked on a wide variety of internal tools for facebook
+                over the past 6 years.
+              </p>
+            </div>
+            <div class="experience__company">
+              <p class="experience__company-no">03</p>
+              <h3 class="heading-3">
+                <span class="experience__company-name--pink">Dribbble,</span>
+                Graphic Designer
+              </h3>
+              <p class="u-text-2 text-grey experience__company-text">
+                I started my design career with Dribbble. I was incharge of
+                creating illustrations for the platform.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="creative">
+          <div class="creative__content section-padding">
+            <h2 class="heading-2 creative__title text-steel-grey">
+              Philosophy & values
+            </h2>
+            <p class="u-text-1 text-grey creative__text">
+              I think everyone wants the same thing - relationship with
+              humanity, peace with the metaphysical, and experience with the
+              universe. I try to grasp these things with my values:
+              authenticity, creativity, & hospitality.
+            </p>
+            <a href="#" class="link link-1">
+              More about me
+            </a>
+          </div>
+          <div class="creative__img">
+            <img src="images/philosophy.jpg" alt="philosophy" />
+          </div>
+        </section>
+
+        <section class="section-padding skill" id="skill">
+          <div class="skill__content">
+            <h2 class="heading-2">Skillset</h2>
+            <p class="u-text-1 text-grey mt-2">
+              With skills in over 4 different fields of design, I am the perfect
+              person to hire when it comes to a full fledged project. Whatever
+              your needs are, I can pretty much take on any challenge.
+            </p>
+          </div>
+          <div class="skill__items">
+            <div class="item">
+              <div class="item__logo">
+                <img src="images/product-design.svg" alt="product-Design" />
+              </div>
+              <h3 class="heading-3 mt-2">Product Design</h3>
+              <p class="u-text-2 text-grey mt-1">
+                Working at Facebook has taught me a lot about how to understand
+                users, solve problems and build great products.
+              </p>
+            </div>
+            <div class="item">
+              <div class="item__logo">
+                <img src="images/visual-design.svg" alt="Visual Design" />
+              </div>
+              <h3 class="heading-3 mt-2">Visual Design</h3>
+              <p class="u-text-2 text-grey mt-1">
+                My experience at dribbble has helped me learn to develop the eye
+                for design. Colors, typography, layout and the whole package.
+              </p>
+            </div>
+            <div class="item">
+              <div class="item__logo">
+                <img src="images/motion-design.svg" alt="Motion Design" />
+              </div>
+              <h3 class="heading-3 mt-2">Motion Design</h3>
+              <p class="u-text-2 text-grey mt-1">
+                I started my design journey with motion design in my college
+                days. Motion is something that really fascinates me because of
+                the flexibility of story telling.
+              </p>
+            </div>
+            <div class="item">
+              <div class="item__logo">
+                <img src="images/photography.svg" alt="Photography" />
+              </div>
+              <h3 class="heading-3 mt-2">Photography</h3>
+              <p class="u-text-2 text-grey mt-1">
+                Clicking pictures really brings out the creative in me.
+                Phtography really makes you look and percieve things in a
+                different way.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="c-logos">
+          <div class="c-logo__cmp">
+            <img src="images/cbre.svg" alt="company-logo" />
+          </div>
+          <div class="c-logo__cmp">
+            <img src="images/epiq.svg" alt="company-logo" />
+          </div>
+          <div class="c-logo__cmp">
+            <img src="images/fannit.svg" alt="company-logo" />
+          </div>
+          <div class="c-logo__cmp">
+            <img src="images/fresh.svg" alt="company-logo" />
+          </div>
+          <div class="c-logo__cmp">
+            <img src="images/placeformom.svg" alt="company-logo" />
+          </div>
+          <div class="c-logo__cmp">
+            <img src="images/mm.svg" alt="company-logo" />
+          </div>
+        </section>
+
+        <section class="section-padding project" id="project">
+          <div class="column">
+            <div class="project__content">
+              <p class="u-text-2 f-bold text-grey">MY PROJECTS</p>
+              <h2 class="heading-2 experience__title">
+                Work that I’ve done for the past 8 years
+              </h2>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="images/project-1.jpg" alt="project-img" />
+              </div>
+
+              <div class="card__content">
+                <h2 class="heading-3 card__title">Restaurant Website Design</h2>
+                <p class="u-text-1 text-grey">
+                  I worked with the guys at CBRE to redesign their entire
+                  website and mobile app fro both Android and iOS. This project
+                  lasted for 4 months and was a very challenging one.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="images/project-2.jpg" alt="project-img" />
+              </div>
+              <div class="card__content">
+                <h2 class="card__title">Restaurant Website Design</h2>
+                <p class="u-text-1 text-grey">
+                  I worked with the guys at CBRE to redesign their entire
+                  website and mobile app fro both Android and iOS. This project
+                  lasted for 4 months and was a very challenging one.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="card__img">
+                <img src="images/project-3.jpg" alt="project-img" />
+              </div>
+              <div class="card__content">
+                <h2 class="card__title">Restaurant Website Design</h2>
+                <p class="u-text-1 text-grey">
+                  I worked with the guys at CBRE to redesign their entire
+                  website and mobile app fro both Android and iOS. This project
+                  lasted for 4 months and was a very challenging one.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="images/project-4.jpg" alt="project-img" />
+              </div>
+              <div class="card__content">
+                <h2 class="card__title">Restaurant Website Design</h2>
+                <p class="u-text-1 text-grey">
+                  I worked with the guys at CBRE to redesign their entire
+                  website and mobile app fro both Android and iOS. This project
+                  lasted for 4 months and was a very challenging one.
+                </p>
+              </div>
+            </div>
+
+            <a class="btn project__btn" href="#">VIEW ALL PROJECTS</a>
+          </div>
+        </section>
+
+        <section class="creative">
+          <div class="creative__content section-padding instagram">
+            <h2 class="heading-2 creative__title text-steel-grey">
+              Instagram
+            </h2>
+            <p class="u-text-1 text-grey creative__text">
+              If you area a person who enjoys photography, then I highly
+              recommend that you check out my Instagram. I’m an avid traveller
+              and I capture the best moments that I would love to cherish with
+              the world
+            </p>
+            <a href="#" class="link link-1"> Follow me on IG </a>
+          </div>
+          <div class="creative__img">
+            <img src="images/instagram.jpg" alt="philosophy" />
+          </div>
+        </section>
+
+        <section class="dribble section-padding-2">
+          <h2 class="heading-2">Dribbble</h2>
+          <p class="u-text-1 text-grey mt-2">
+            Each dribbble shot is made with love and care. Do check out my work
+            on
+            <br />
+            Dribbble. Likes and comments are appreciated.
+          </p>
+          <a href="#" class="link link-2">Follow me on Dribbble</a>
+
+          <div class="dribble__img">
+            <img src="images/dribble.png" alt="dribbble-img" />
+          </div>
+        </section>
+
+        <section class="testimonial section-padding">
+          <div class="testimonial__content">
+            <h1 class="heading-2">
+              This is what people say about me
+            </h1>
+            <p class="u-text-1 text-grey mt-2">
+              Here are a few lines from people who I have worked with over the
+              past 8+ years in my design career.
+            </p>
+            <a href="#" class="link link-2">See all testimonials</a>
+          </div>
+          <div class="testimonial__cards">
+            <div class="t-card">
+              <div class="t-card__img">
+                <img src="images/testimonial-1.jpg" alt="testimonial" />
+              </div>
+              <div class="t-card__content">
+                <h3 class="heading-3">
+                  ‘’Robin is one of the best designers I have worked with in my
+                  entire life. He is a designer who is very capable of taking up
+                  complex projects and delivers impeccable design.’’
+                </h3>
+                <p class="u-text-1 f-bold text-grey mt-6">Richard Owens</p>
+                <p class="u-text-2 text-grey mt-sm">CEO, Company 1</p>
+              </div>
+            </div>
+            <div class="t-card">
+              <div class="t-card__img">
+                <img src="images/testimonial-2.jpg" alt="testimonial" />
+              </div>
+              <div class="t-card__content">
+                <h3 class="heading-3">
+                  ‘’I think Robin has an incredible gift. It has been an
+                  absolute pleasure to work with a designer of this caliber.’’
+                </h3>
+                <p class="u-text-1 f-bold text-grey mt-6">Emily Parker</p>
+                <p class="u-text-2 text-grey mt-sm">CEO, Company 2</p>
+              </div>
+            </div>
+            <div class="t-card">
+              <div class="t-card__img">
+                <img src="images/testimonial-3.jpg" alt="testimonial" />
+              </div>
+              <div class="t-card__content">
+                <h3 class="heading-3">
+                  ‘’All I can say that, Robin is a phenomenal designer. The
+                  wavelength at which he thinks is astoundaing. I love the
+                  focus, passion and attention to detial in the design.’’
+                </h3>
+                <p class="u-text-1 f-bold text-grey mt-6">Vincent Rudd</p>
+                <p class="u-text-2 text-grey mt-sm">CEO, Company 3</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="photography section-padding" id="photography">
+          <h2 class="heading-2">Photography</h2>
+          <p class="u-text-1 mt-2 text-grey">
+            Here is a collection of my best travel pictures that I took while
+            <br />
+            travelling places all around the world.
+          </p>
+          <ul class="mt-6 country-links">
+            <li><a class="btn country__btn" href="#">ITALY</a></li>
+            <li><a class="btn country__btn" href="#">AUSTRALIA</a></li>
+            <li><a class="btn country__btn" href="#">INDIA</a></li>
+            <li><a class="btn country__btn" href="#">BRAZIL</a></li>
+          </ul>
+          <div class="photography__img-list">
+            <div class="photography__img">
+              <img src="images/travel-4.jpg" alt="travel-img" />
+            </div>
+            <div class="photography__img">
+              <img src="images/travel-1.jpg" alt="travel-img" />
+            </div>
+
+            <div class="photography__img">
+              <img src="images/travel-3.jpg" alt="travel-img" />
+            </div>
+            <div class="photography__img">
+              <img src="images/travel-2.jpg" alt="travel-img" />
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section-padding-2" id="contact">
+          <div class="contact__content">
+            <h2 class="heading-2">Let’s get started</h2>
+            <p class="u-text-1 text-grey mt-2">
+              Now that you know a lot about me, let me know if you are
+              interested to work with me.
+            </p>
+          </div>
+          <form class="contact-form" action="#">
+            <label class="contact-form__label" for="name">Name</label>
+            <input class="contact-form__input" id="name" type="text" />
+            <label class="contact-form__label" for="email">
+              Email
+            </label>
+            <input class="contact-form__input" id="email" type="email" />
+
+            <label class="contact-form__label" for="message">Message</label>
+            <textarea
+              class="contact-form__input contact-form__input--msg"
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <input
+              class="contact-form__btn"
+              type="submit"
+              value="LET'S GET STARTED"
+            />
+          </form>
+        </section>
+
+        <footer class="footer">
+          <section class="ft-main">
+            <div class="ft-main-item">
+              <div class="ft__logo">
+                <img src="images/robin-logo.svg" alt="logo" />
+              </div>
+
+              <ul class="ft-social-list">
+                <li>
+                  <a href="#"
+                    ><img
+                      class="ft-social__icon"
+                      src="images/twitter.svg"
+                      alt="social-icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      class="ft-social__icon"
+                      src="images/dribbble.svg"
+                      alt="social-icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      class="ft-social__icon"
+                      src="images/linkedIn.svg"
+                      alt="social-icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="ft-main-item ft-links">
+              <ul class="ft-links__list">
+                <li><a class="ft-link" href="#">Home</a></li>
+                <li><a class="ft-link" href="#">About</a></li>
+                <li><a class="ft-link" href="#">Work</a></li>
+                <li><a class="ft-link" href="#">Process</a></li>
+              </ul>
+
+              <ul class="ft-links__list">
+                <li><a class="ft-link" href="#">Store</a></li>
+                <li><a class="ft-link" href="#">Blog</a></li>
+                <li><a class="ft-link" href="#">Reading List</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="ft-legal">
+            <p class="text-grey">
+              Not Copyright 2020 • Robin Williams. Webflow cloneable
+            </p>
+          </section>
+        </footer>
+      </main>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
